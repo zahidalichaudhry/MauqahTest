@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Most Popular Articles</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title">Title:</string>
+    <string name="abstract_">Abstract:</string>
+    <string name="caption">Caption:</string>
+    <string name="written_by">Written By:</string>
+    <string name="section">Section:</string>
+    <string name="published_date">Published Date:</string>
+</resources>
