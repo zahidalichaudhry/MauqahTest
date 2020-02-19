@@ -9,9 +9,13 @@ import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
-import retrofit2.http.Header;;
+import retrofit2.http.Header;
+import retrofit2.http.Query;;
 
 public interface ApiService {
-    @GET("mostviewed/all-sections/7.json?api-key=sKu1UKq4yi2G3UFYGs3z7QWiv4AUGuMO")
-    Call<GeneralResponseModel<ArrayList<ArticleModel>>> getMostpopularArticles();
+    @GET("svc/mostpopular/v2/viewed/7.json")
+    Call<GeneralResponseModel<ArrayList<ArticleModel>>> getMostpopularArticles(@Query("api-key") String apiKey);
+
+//    ?api-key=sKu1UKq4yi2G3UFYGs3z7QWiv4AUGuMO
+//@Query("api-key") String apiKey
 }

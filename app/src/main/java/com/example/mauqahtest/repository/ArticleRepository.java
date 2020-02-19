@@ -47,7 +47,7 @@ public class ArticleRepository {
         }
         try {
 
-            getPopularAticleList = apiClientModule.getApiService().getMostpopularArticles();
+            getPopularAticleList = apiClientModule.getApiService().getMostpopularArticles(ApiUtils.APIKEY);
 
             getPopularAticleList.enqueue(new Callback<GeneralResponseModel<ArrayList<ArticleModel>>>() {
                 @Override
